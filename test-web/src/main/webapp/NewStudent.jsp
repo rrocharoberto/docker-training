@@ -5,8 +5,8 @@
 </head>
 <body>
 
-	<a href="/lab7-web00/StudentService">Back to Student list</a>
-	<form action="/lab7-web00/StudentService" method="post">
+	<a href="/test-web/StudentService">Back to Student list</a>
+	<form action="/test-web/StudentService" method="post">
 
 		<!-- usado para controlar o fluxo no doGet e doPost devido ao edit/novo -->
 		<input type="hidden" name="type" value="${actionType}" />

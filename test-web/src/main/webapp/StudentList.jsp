@@ -13,12 +13,12 @@
 <c:if test="${empty studentList}">
 	<h3>The student list is empty.</h3>
 	<br/>
-	<a href="/lab7-web00/NewStudent.jsp">Create new Student</a>
+	<a href="/test-web/NewStudent.jsp">Create new Student</a>
 </c:if>
 
 <c:if test="${not empty studentList}">
 
-	<a href="/lab7-web00/NewStudent.jsp">Create new Student</a>
+	<a href="/test-web/NewStudent.jsp">Create new Student</a>
 	<table border=true>
 		<tr>
 			<th>Register</th>
@@ -32,7 +32,7 @@
 				<td>${student.name}</td>
 				
 				<!-- Exercício: implementar uma edição de Student. -->
-				<td><a href="/lab7-web00/StudentService?type=edit&register=${student.register}">Edit student</a></td>
+				<td><a href="/test-web/StudentService?type=edit&register=${student.register}">Edit student</a></td>
 			</tr>
 		</c:forEach>
 	

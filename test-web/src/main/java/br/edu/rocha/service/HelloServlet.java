@@ -17,7 +17,7 @@ public class HelloServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		//exemplo de URL que cai nesse método:
-		//http://localhost:8080/lab7-web01/HelloService?nome=Roberto
+		//http://localhost:8080/test-web/HelloService?nome=Roberto
 		
 		//pegando o parâmetro vindo na URL
 		//se não existir o parâmetro, o valor retornado será null
