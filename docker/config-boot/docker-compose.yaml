@@ -4,15 +4,17 @@ services:
 
    boot_server-test:
       image: boot-image
+      build: springBoot/.
       networks:
          - my-net
       ports:
          - 7070:8080
       depends_on: 
-         - db_server
+         - db_server-test
 
    db_server-test:
       image: db-boot-image
+      build: postgres/.
       container_name: db_server
       restart: always
       networks:
